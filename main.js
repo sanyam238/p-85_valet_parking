@@ -26,7 +26,7 @@ greencar_imgTag.src = greencar_image;
 }
 
 function uploadBackground() {
-ctx.drawImage(background_imgTag,0,0,canvas.width,canvas.height);
+ctx.drawImage(background_imgTag, 0, 0, canvas.width, canvas.height);
 }
 
 function uploadgreencar() {
@@ -92,7 +92,7 @@ function down()
 
 function left()
 {
-	if(greencar_y>= 0){
+	if(greencar_x>= 0){
 	
 		greencar_x = greencar_x - 10;
 		console.log("When left arrow is pressed, x = "+ greencar_x + " Y = " + greencar_y);
@@ -103,7 +103,7 @@ function left()
 
 function right()
 {
-	if(greencar_y<= 700){
+	if(greencar_x<= 700){
 	
 		greencar_x = greencar_x + 10;
 		console.log("When right arrow is pressed, x = "+ greencar_x + " Y = " + greencar_y);
