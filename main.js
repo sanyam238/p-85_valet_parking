@@ -74,19 +74,19 @@ function up()
 	
 	greencar_y = greencar_y - 10;
 	console.log("When up arrow is pressed, x = "+ greencar_x + " Y = " + greencar_y);
-	uploadBackground;
-	uploadgreencar;
+	uploadBackground();
+	uploadgreencar();
 	}
 }
 
 function down()
 {
-	if(greencar_y>=500){
+	if(greencar_y<=300){
 	
 		greencar_y = greencar_y + 10;
 		console.log("When down arrow is pressed, x = "+ greencar_x + " Y = " + greencar_y);
-		uploadBackground;
-		uploadgreencar;
+		uploadBackground();
+		uploadgreencar();
 		}
 }
 
@@ -96,8 +96,8 @@ function left()
 	
 		greencar_x = greencar_x - 10;
 		console.log("When left arrow is pressed, x = "+ greencar_x + " Y = " + greencar_y);
-		uploadBackground;
-		uploadgreencar;
+		uploadBackground();
+		uploadgreencar();
 		}
 }
 
@@ -107,7 +107,7 @@ function right()
 	
 		greencar_x = greencar_x + 10;
 		console.log("When right arrow is pressed, x = "+ greencar_x + " Y = " + greencar_y);
-		uploadBackground;
-		uploadgreencar;
+		uploadBackground();
+		uploadgreencar();
 		}
 }
